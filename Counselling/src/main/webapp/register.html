@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Register : Personal Details</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" type="text/css" href="style.css">
+         <style>
+
+  .in {
+      content: "* ";
+      margin-right: 5%;
+    padding: 0 20px;
+     width: 200px;
+  height: 30px;
+  border: 1px solid red;
+  }
+  
+  
+  
+  select{
+       width: 70px;
+  height: 30px;
+  }
+
+</style>
+         
+    </head>
+    <body>
+         <div class="d1">
+    <center><img src="./images/c.png" height="80px" width="80px"></center>
+    <center><h1>GOVERNMENT OF TAMIL NADU</h1></center>
+    <center><h3>TAMIL NADU ENGINEERING ADMISSIONS - 2023</h3></center>
+         </div>
+        
+         <div class="navbar">            
+             <a href="index.html">Home</a>
+             <a href="login.html">Login</a>
+             <a class="active" href="#">Register</a> 
+             <a href="./admin/admin.html">Admin</a>
+        </div>
+    <center><h2>Application Form</h2></center>
+    <u><a href="#" class="button">Personal Details</a></u>
+    <a href="academic.html" class="button" >Academic Details</a>
+    <a href="./payment/payment.html" class="button" >Payment</a>
+    <br><br>
+    <div class="form">
+    <form>
+        <br><center><h2>Personal Details</h2></center>
+        <hr style="border: 1px solid red;">
+        <label for="fname" style="margin-right: 5%;padding:0px 15px;">Name:</label>
+        <select style="margin-right: 5%;">
+            <option>Mr.</option>
+            <option>Ms.</option>
+            <option>Mrs.</option>
+        </select>
+        <input class="in" placeholder="First Name"  type="text" name="fname" id="fname"/>
+        <input class="in" placeholder="Middle Name"   type="text" name="mname" id="mname"/>
+        <input  class="in" placeholder="Last Name"  type="text" name="lname" id="lname"/><br><br>
+        
+         <label for="fname" style="margin-right: 20px;padding:0px 15px;">Father's Name:</label>
+        <select style="margin-right: 5%;">
+            <option>Mr.</option>
+            <option>Ms.</option>
+            <option>Mrs.</option>
+        </select>
+        <input class="in" placeholder="First Name"  type="text" name="ffname" id="ffname"/>
+        <input class="in" placeholder="Middle Name"   type="text" name="fmname" id="fmname"/>
+        <input class="in" placeholder="Last Name"  type="text" name="flname" id="flname"/><br><br>
+        
+        <label for="fname" style="margin-right: 14px;padding:0px 15px;">Mother's Name:</label>
+        <select style="margin-right: 5%;">
+            <option>Mr.</option>
+            <option>Ms.</option>
+            <option>Mrs.</option>
+        </select>
+        <input class="in" placeholder="First Name"  type="text" name="mfname" id="mfname" required/>
+        <input class="in" placeholder="Middle Name"   type="text" name="mmname" id="mmname"/>
+        <input class="in" placeholder="Last Name"  type="text" name="mlname" id="mlname"/><br><br>
+        <label for="d"  style="margin-right: 5.5%;padding:0px 15px;">DOB:</label>
+        <input  class="in" type="date" name="d">
+        
+        <label for="com"  style="margin-right: 2.5%;padding:0px 15px;">Community:</label>
+        <input class="in" placeholder="Community"  type="text" name="com" id="com" required/>
+        
+         <label for="cas"  style="margin-right: 2.5%;padding:0px 15px;">Caste:</label>
+         <input class="in" placeholder="Caste"  type="text" name="cas" id="cas" required/><br><br>
+        
+        <label for="ano"  style="margin-right: 3.2%;padding:0px 15px;">Aadhar no:</label>
+        <input class="in" placeholder="Aadhar Number"  type="text" name="ano" id="ano" required/>
+        
+        
+        
+        
+        <br><br><br>
+        
+        <center><h2>Permanent Address</h2></center>
+        <hr style="border: 1px solid red;">
+        <label for="dno" style="margin-right: 3%;padding:0px 15px;">Door No:</label>
+        <input class="in" type="text" name="dno" id="dno" required/><br><br>
+        
+        <label for="lno" style="margin-right: 1.5%;padding:0px 15px;">Street Name:</label>
+        <input class="in"  type="text" name="lno" id="lno" required/>
+        
+         <label for="lno" style="margin-right: 3%;padding:0px 15px;">Area/Landmark:</label>
+         <input class="in" type="text" name="lno" id="lno" required/><br><br>
+        
+        <label for="city" style="margin-right: 5%;padding:0px 15px;">City:</label>
+        <input class="in" type="text" name="city" id="city" required/>
+        
+         <label for="state" style="margin-right: 7.8%;padding:0px 15px;">State:</label>
+        <input class="in" type="text" name="state" id="state" required/>
+        
+        <label for="pc" style="margin-right: 4%;padding:0px 15px;">Pincode:</label>
+        <input class="in" type="text" name="pc" id="pc" required/><br><br>
+        
+        <label for="cn" style="margin-right: 3.2%;padding:0px 15px;">Country:</label>
+        <input class="in" type="text" name="cn" id="cn" required/><br><br>
+        
+        <h4>Are the Permanent Address and the Present Address are Same?</h4>
+       
+        <input style="width: 15px;height: 15px;border-radius: 50%;" type="radio" name="c1" id="c1" />
+         <label  style="padding:0px 15px;" for="c1">Yes</label>
+        <input  style="width: 15px;height: 15px;border-radius: 50%;" type="radio" name="c1" id="c2"/>
+        <label  style="padding:0px 15px;" for="c2">No</label><br><br><br>
+        
+        
+        <center><h2>Present Address</h2></center>
+        <hr style="border: 1px solid red;">
+        <label for="dno" style="margin-right: 3%;padding:0px 15px;">Door No:</label>
+        <input class="in" type="text" name="dno" id="dno" required/><br><br>
+        
+        <label for="lno" style="margin-right: 1.5%;padding:0px 15px;">Street Name:</label>
+        <input class="in"  type="text" name="lno" id="lno" required/>
+        
+         <label for="lno" style="margin-right: 3%;padding:0px 15px;">Area/Landmark:</label>
+         <input class="in" type="text" name="lno" id="lno" required/><br><br>
+        
+        <label for="city" style="margin-right: 5%;padding:0px 15px;">City:</label>
+        <input class="in" type="text" name="city" id="city" required/>
+        
+         <label for="state" style="margin-right: 7.8%;padding:0px 15px;">State:</label>
+        <input class="in" type="text" name="state" id="state" required/>
+        
+        <label for="pc" style="margin-right: 4%;padding:0px 15px;">Pincode:</label>
+        <input class="in" type="text" name="pc" id="pc" required/><br><br>
+        
+        <label for="cn" style="margin-right: 3.2%;padding:0px 15px;">Country:</label>
+        <input class="in" type="text" name="cn" id="cn" required/><br><br>
+        
+       
+        
+        <center><h2>Contact Details</h2></center>
+        <hr style="border: 1px solid red;">
+        
+        <label for="lno" style="margin-right: 2.5%;padding:0px 15px;">Email ID:</label>
+        <input class="in"  type="text" name="lno" id="lno" required/>
+        
+         <label for="lno" style="margin-right: 2.5%;padding:0px 15px;">Alternate Email Id:</label>
+         <input class="in" type="text" name="lno" id="lno" required/><br><br>
+         
+         <label for="lno" style="margin-right: 0%;padding:0px 15px;">Phone Number:</label>
+        <input class="in"  type="text" name="lno" id="lno" required/>
+        
+         <label for="lno" style="margin-right: 2.7%;padding:0px 15px;">Alternate Number:</label>
+         <input class="in" type="text" name="lno" id="lno" required/><br><br><br><br><br>
+         
+         
+         <input class="button" type="reset" value="Clear"/>&nbsp;&nbsp;&nbsp;&nbsp;
+         <input class="button" type="submit" value="Save and Continue"/><br><br>
+        
+        
+    </form>
+    </div>  
+       
+        
+        
+    </body>
+</html>

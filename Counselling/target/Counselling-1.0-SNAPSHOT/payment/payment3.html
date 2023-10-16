@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <style>
+            .in {
+      content: "* ";
+      margin-right: 5%;
+    padding: 0 20px;
+     width: 200px;
+  height: 30px;
+  border: 1px solid red;
+  text-align: center;
+  }
+        </style>
+        
+        <script>
+            function makePayment(){
+                var inputFields = document.getElementsByTagName("input");
+                var allFilled = true;
+
+      for (var i = 0; i < inputFields.length; i++) {
+        if (inputFields[i].value === "") {
+          allFilled = false;
+          break;
+        }
+      }
+
+      if (allFilled) {
+        alert("Payment Successful.You have Registered for the TNEA Counselling 2023");
+      } else {
+        alert("Please fill in all input fields.");
+      }
+                
+            }
+            function NextPage(){
+      window.location.href = "payment.html";
+    }
+            
+        </script>
+        
+    </head>
+    <body>
+        <div class="d1">
+    <center><img src="../images/c.png" height="80px" width="80px"></center>
+    <center><h1>GOVERNMENT OF TAMIL NADU</h1></center>
+    <center><h3>TAMIL NADU ENGINEERING ADMISSIONS - 2023</h3></center>
+         </div>
+        
+         <div class="navbar">            
+             <a href="../index.html">Home</a>
+             <a href="../login.html">Login</a>
+             <a class="active" href="#">Register</a> 
+             <a href="../admin/admin.html">Admin</a>
+         </div>
+        <center><h2>Application Form</h2></center>
+    <a href="../register.html" class="button">Personal Details</a>
+    <a href="../academic.html" class="button" >Academic Details</a>
+    <a href="payment.html" class="button" >Payment</a>
+    <br><br>
+    <center><h3>Registration Fee:   500</h3>
+        <h3>Total (INR):        500</h3></center>
+    <div class="form">
+        <br>
+        <img style="margin-left: 47%" src="../images/b2.jpeg" height="50px" width="180px"/><br><br><br>
+            
+        <form>   
+    <label style="margin-right: 2.5%;margin-left: 40%" for="cardNumber">Card Number:</label>
+    <input class="in" type="text" id="cardNumber" name="cardNumber" required><br><br>
+
+    <label style="margin-right: 3.2%;margin-left: 40%" for="expiryDate">Expiry Date:</label>
+    <input class="in" type="text" id="expiryDate" name="expiryDate" required><br><br>
+
+    <label style="margin-right: 6.3%;margin-left: 40%" for="cvv">CVV:</label>
+    <input class="in" type="text" id="cvv" name="cvv" required><br><br>
+
+    <label style="margin-right: 5%;margin-left: 40%" for="amount">Amount:</label>
+    <input class="in" type="number" id="amount" name="amount" required><br><br><br>
+
+     <input style="margin-left: 40%" class="button" onclick="NextPage()"  type="button" value="Back" />&nbsp;&nbsp;&nbsp;&nbsp;
+         <input class="button" type="submit"  onclick="makePayment()" value="Pay"/><br><br>
+  </form>
+        </div>   
+    
+    </body>
+</html>

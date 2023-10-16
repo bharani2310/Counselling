@@ -1,0 +1,109 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 4 Jul, 2023, 11:36:24 AM
+    Author     : bhara
+*/
+
+
+
+.pos_l{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 80%;
+}
+
+.pos_r {
+    overflow: hidden;
+    position: absolute;
+    right: 8px;
+    height: 500px;
+    width: 270px;
+    border: solid;
+    border-color: #EDC7B7;
+    padding-left: 3px;
+}
+
+.d1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #EDC7B7
+}
+
+.d2{
+  margin-top: 7%; 
+  width: 35%; 
+  height: 50%; 
+  position: absolute;
+  top:64%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white
+
+}
+
+
+
+.custom-input {
+  width: 200px;
+  height: 30px;
+  background-color: #fdf8f6
+}
+
+.navbar {
+    background-color: #f2d7cb;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: #de977a;
+    color: rgb(4, 15, 18);
+}
+
+.navbar a.active {
+    background-color: #ce6539;
+    color: rgb(11, 1, 1);
+}
+
+
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form{
+    background-color: whitesmoke
+}
+
+.underline{
+    text-decoration: underline;
+  text-decoration-color: red;
+}
+
+
+
+

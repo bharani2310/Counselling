@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Register : Academic Details</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" type="text/css" href="style.css">
+         <style>
+              .in {
+   
+      margin-right: 5%;
+    padding: 0 20px;
+     width: 200px;
+  height: 30px;
+  border: 1px solid red;
+  }
+  
+  table {
+      
+  border-collapse: collapse;
+  border: 1px solid black;
+  padding: 8px;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.ta{
+    float: left;
+  
+  padding: 100px;
+}
+
+         </style>
+         <script>
+             function cutoff(){
+             var m1 = parseFloat(document.getElementById("mark31").value);
+             var m2 = parseFloat(document.getElementById("mark51").value);
+             var m3 = parseFloat(document.getElementById("mark61").value);
+             var total=m1+(m2+m3)/2;
+             
+             var input = document.getElementById("myInput");
+             input.value = total;
+         }
+         </script>
+        
+         
+       
+             
+    </head>
+    <body>
+         <div class="d1">
+    <center><img src="./images/c.png" height="80px" width="80px"></center>
+    <center><h1>GOVERNMENT OF TAMIL NADU</h1></center>
+    <center><h3>TAMIL NADU ENGINEERING ADMISSIONS - 2023</h3></center>
+         </div>
+        
+         <div class="navbar">            
+             <a href="index.html">Home</a>
+             <a href="login.html">Login</a>
+             <a class="active" href="#">Register</a> 
+             <a href="./admin/admin.html">Admin</a>
+        </div>
+    <center><h2>Application Form</h2></center>
+    <a href="register.html" class="button">Personal Details</a>
+    <a href="#" class="button">Academic Details</a>
+    <a href="./payment/payment.html" class="button" >Payment</a><br><br>
+    <div class="form">
+    <form>
+        <br><center><h2>School of Study Information</h2></center>
+        <hr style="border: 1px solid red;"> <br><br>
+        <center><table>
+  <thead>
+    <tr>
+      <th>Class</th>
+      <th>Name Of the Institution</th>
+      <th>Year of Passing</th>
+      <th>Name of the Board Of Examination</th>
+      <th>District</th>
+      <th>State</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>X Standard</td>
+      <td><input class="in" type="text" name="sname1" id="sname1"/></td>
+      <td><input class="in" type="number" id="year1" name="year1" min="1900" max="2100" step="1"></td>
+      <td><center><select class="in">
+                      <option>TamilNadu State Board</option>
+                      <option>CBSE</option>
+                      
+          </select></center></td>
+      <td><input class="in" type="text" name="d1" id="d1"/></td>
+          <td><input class="in" type="text" name="state1" id="state1"/></td>
+      
+    </tr>
+    <tr>
+      <td>XI Standard</td>
+      <td><input class="in" type="text" name="sname2" id="sname2"/></td>
+      <td><input class="in" type="number" id="year2" name="year2" min="1900" max="2100" step="1"></td>
+      <td><center><select class="in">
+                      <option>TamilNadu State Board</option>
+                      <option>CBSE</option>
+                      
+      </select></center></td>
+      <td><input class="in" type="text" name="d2" id="d2"/></td>
+      <td><input class="in" type="text" name="state2" id="state2"/></td>
+    </tr>
+    
+    <tr>
+      <td>XII Standard</td>
+      <td><input class="in" type="text" name="sname3" id="sname3"/></td>
+      <td><input class="in" type="number" id="year3" name="year3" min="1900" max="2100" step="1"></td>
+      <td><center><select class="in">
+                      <option>TamilNadu State Board</option>
+                      <option>CBSE</option>
+                      
+      </select></center></td>
+      <td><input class="in" type="text" name="d3" id="d3"/></td>
+      <td><input class="in" type="text" name="state3" id="state3"/></td>
+    </tr>
+    
+  </tbody>
+            </table></center><br><br><br>
+            
+            <label style="margin-right: 2.5%;padding:0px 25px;" for="sno">SSLC Register Number:</label>
+            <input class="in" type="text" name="sno" id="sno"/>
+            <label style="margin-right: 2.5%;padding:0px 25px;" for="sm">SSLC Mark:</label>
+            <input class="in" type="text" placeholder="Out of 500" name="sm" id="sm"/>
+            
+            <br><br>
+            <label style="margin-right: 3%;padding:0px 25px;" for="hno">HSC Register Number:</label>
+            <input class="in" type="text" name="hno" id="hno"/>
+            <label style="margin-right: 3%;padding:0px 25px;" for="hm">HSC Mark:</label>
+            <input class="in" type="text" placeholder="Out of 600" name="hm" id="hm"/>
+            
+            <br><br>
+            <label style="margin-right: 6.5%;padding:0px 25px;" for="eno">EMIS Number:</label>
+            <input class="in" type="text" name="eno" id="eno"/><br><br><br><br>
+            
+            
+            
+            <center><h2>X Marks</h2></center>
+        <hr style="border: 1px solid red;"> <br><br>
+            
+            
+            <center><table style="margin-top: 20px;margin-left: 50px;">
+                
+  <tr>
+    <th>Subject</th>
+    <th>Marks</th>
+    
+    
+   
+  </tr>
+  <tr>
+    <td>Tamil</td>
+    <td> <input class="in" type="number" placeholder="Out of 100" name="mark1" id="mark1"/></td>   
+  </tr>
+  <tr>
+    <td>English</td>
+    <td><input class="in" type="number" placeholder="Out of 100" name="mark2" id="mark2"/></td>    
+  </tr>
+   <tr>
+    <td>Maths</td>
+    <td><input class="in" type="number" placeholder="Out of 100" name="mark3" id="mark3"/></td>   
+  </tr>
+   <tr>
+    <td>Science</td>
+    <td><input class="in" type="number" placeholder="Out of 100" name="mark4" id="mark4"/></td>   
+  </tr>
+   <tr>
+    <td>Social</td>
+    <td><input class="in" type="number" placeholder="Out of 100" name="mark5" id="mark5"/></td>   
+  </tr>
+  
+                </table></center><br<br><br><br>
+            
+           
+      <center><h2>XII Marks</h2></center>
+        <hr style="border: 1px solid red;"> <br><br>      
+            
+        <center><table>
+                
+  <tr>
+    <th>Subject</th>
+    <th>Marks</th>
+    
+    
+   
+  </tr>
+  <tr>
+    <td>Tamil</td>
+    <td> <input class="in" type="number" placeholder="Out of 100" name="mark11" id="mark11" required/></td>   
+  </tr>
+  <tr>
+    <td>English</td>
+    <td><input class="in" type="number" placeholder="Out of 100" name="mark21" id="mark21" required/></td>    
+  </tr>
+   <tr>
+    <td>Maths</td>
+    <td><input class="in" type="number" placeholder="Out of 100" name="mark31" id="mark31" required/></td>   
+  </tr>
+   <tr>
+    <td>Biology/Computer Science</td>
+    <td><input class="in" type="number" placeholder="Out of 100" name="mark41" id="mark41" required/></td>   
+  </tr>
+   <tr>
+    <td>Physics</td>
+    <td><input class="in" type="number" placeholder="Out of 100" name="mark51" id="mark51" required/></td>   
+  </tr>
+   <tr>
+    <td>Chemistry</td>
+    <td><input class="in" type="number" placeholder="Out of 100" name="mark61" id="mark61" required/></td>   
+  </tr>
+  
+            </table></center><br><br><br>
+            
+            <input  style="margin-right: 1%;margin-left: 35%;" class="button" type="button" value="Calculate Cut-Off" onclick="cutoff()"/>
+            <input class="in" type="text" id="myInput" placeholder="Cut-off out of 200"><br><br><br>
+            
+            <input class="button" type="reset" value="Clear"/>&nbsp;&nbsp;&nbsp;&nbsp;
+         <input class="button" type="submit" value="Save and Continue"/><br><br>
+            
+            
+            
+    </form>
+        
+    </div>   
+        
+        
+    </body>
+</html>

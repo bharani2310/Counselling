@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" type="text/css" href="style.css">
+         <style>
+                .pos{
+     position: absolute;
+     left:0;
+     top:110%;
+     width:100%;
+     background-color: #EDC7B7;
+}
+.large-word {
+      letter-spacing: 210px; 
+    }    
+         </style>
+             
+    </head>
+    <body>
+         <div class="d1">
+    <center><img src="./images/c.png" height="80px" width="80px"></center>
+    <center><h1>GOVERNMENT OF TAMIL NADU</h1></center>
+    <center><h3>TAMIL NADU ENGINEERING ADMISSIONS - 2023</h3></center>
+         </div>
+        
+         <div class="navbar">            
+             <a href="index.html">Home</a>
+             <a class="active" href="#">Login</a>
+             <a href="register.html">Register</a> 
+             <a href="./admin/admin.html">Admin</a>
+        </div>  
+        
+        <div class="d2" >
+            
+            <center><img src="./images/OIP.jpeg" height="50px" width="50px">
+                <h2>User Login</h2><br>
+            
+            <form action="login.jsp" method="post">
+                <input class="custom-input" type="text" id="username" name="username" placeholder="Enter Name/Email"/><br><br><br>
+                <input class="custom-input" type="password" id="password" name="password" placeholder="Enter Password"/><br><br><br>
+                <input class="button" type="submit" value="Submit"/>&nbsp;&nbsp;&nbsp;&nbsp;
+                <input class="button" type="reset" value="Clear"/>              
+            </form>               
+        </center>
+        </div>
+        
+         <div>
+            <br><br>
+            <marquee style="color:red;" direction="left" onmouseover="this.stop();" onmouseout="this.start();"><p> The Last Date 
+                for the Submission of General Counselling Application is extended till August 10. The Counselling for Special Reserved people is on July 20.
+                The online General Counselling will be on August 15.</p></marquee>
+        </div>
+        
+        <div class="pos">
+           <center><p style="font-size: 20px;">For all your queries call us on a Toll Free Number:<p>
+            <p style="font-size: 18px;">1800-425-0110<p></center> 
+            <br>
+            <div>
+                
+            <img style="vertical-align: middle;margin-right: 5px;margin-left: 15%;" src="./images/home.png" height="40" width="40" id="im" alt="address"/> 
+            <b><label style="font-size:20px;" for="im" >Address</label></b>
+            <img style="vertical-align: middle;margin-right: 5px;margin-left: 22%;" src="./images/email.jpg" height="40" width="40" id="im2" alt="address"/> 
+             <b><label style="font-size:20px;" for="im2" >E-mail</label></b>
+             <img style="vertical-align: middle;margin-right: 5px;margin-left: 14.6%;" src="./images/phone.jpeg" height="30" width="40" id="im3" alt="address"/> 
+             <b><label style="font-size:20px;" for="im3" >Phone</label></b>
+             
+            <br>
+            <b><p style="font-size: 16px;margin-left: 10%;">Directorate of Technical Education (DoTE)<span class="large-word" >,</span>tneacare@gmail.co<span class="large-word">m</span>044-22351014</p></b>
+            <b><p style="font-size: 16px;margin-left: 14%;">53, Sardar Patel Road,</p><b>
+            <b><p style="font-size: 16px;margin-left: 16.5%;">Guindy,</p><b>
+            <b><p style="font-size: 16px;margin-left: 14.4%;">Chennai - 600 025</p><b>
+                    <center><h5>@2023, TNEA</h5></center>
+            </div>
+       </div>
+        
+        
+    </body>
+</html>

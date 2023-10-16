@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Admin Management</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" type="text/css" href="style.css">
+          <style>
+
+  .in {
+      
+      margin-right: 2%;
+      padding: 10px 20px;
+    padding: 0 20px;
+     width: 200px;
+  height: 37px;
+  border: 1px solid red;
+  }
+  
+  .out {
+      
+      margin-right: 2%;
+      padding: 10px 20px;
+    padding: 0 20px;
+     width: 400px;
+  height: 37px;
+  border: 1px solid red;
+  }
+  
+  table {
+      
+  border-collapse: collapse;
+  border: 1px solid black;
+  padding: 8px;
+}
+
+th {
+  border: 1px solid black;
+  padding: 8px;
+  color: red;
+}
+
+td {
+  border: 1px solid black;
+  padding: 8px;
+}
+  
+  </style>
+  
+   <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var i = 3;
+      var table = document.getElementById("myTable");
+      var tbody = table.querySelector("tbody") || table;
+      var updateButton = document.getElementById("updateButton");
+
+      updateButton.addEventListener("click", function() {
+        var newRow = document.createElement("tr");
+        var cell1 = document.createElement("td");
+        cell1.textContent = getDynamicCellValue1();
+        var cell2 = document.createElement("td");
+        cell2.textContent = getDynamicCellValue2();
+        var cell3 = document.createElement("td");
+        cell3.textContent = getDynamicCellValue3();
+
+        newRow.appendChild(cell1);
+        newRow.appendChild(cell2);
+        newRow.appendChild(cell3);
+
+        tbody.appendChild(newRow);
+      });
+
+      function getDynamicCellValue1() {
+        i++;
+        return i;
+      }
+
+      function getDynamicCellValue2() {
+        var inputValue = prompt("Enter Counselling Code:");
+        return inputValue || "";
+      }
+
+      function getDynamicCellValue3() {
+        var inputValue2 = prompt("Enter Name of the College:");
+        return inputValue2 || "";
+      }
+    });
+    
+   document.addEventListener("DOMContentLoaded", function() {
+      var searchButton = document.getElementById("searchButton");
+      searchButton.addEventListener("click", function() {
+        var searchInput = document.getElementById("searchInput").value;
+        searchAndPrintResult(searchInput);
+      });
+
+      function searchAndPrintResult(code) {
+        var table = document.getElementById("myTable");
+        var rows = table.getElementsByTagName("tr");
+        var resultDiv = document.getElementById("result");
+        var collegeName = "";
+
+        for (var i = 1; i < rows.length; i++) {
+          var row = rows[i];
+          var codeCell = row.cells[1].textContent;
+
+          if (codeCell === code) {
+            collegeName = row.cells[2].textContent;
+            break;
+          }
+        }
+
+        if (collegeName) {
+            var myInput = document.getElementById("searchInput");
+            myInput.value =collegeName;;
+         
+        } else {
+            var myInput = document.getElementById("searchInput");
+             myInput.value ="College not found for the provided Counselling Code.";
+          
+        }
+      }
+    });
+    
+    
+    
+  </script>
+    
+
+  
+
+    </head>
+    <body>
+         <div class="d1">
+    <center><img src="../images/c.png" height="80px" width="80px"></center>
+    <center><h1>GOVERNMENT OF TAMIL NADU</h1></center>
+    <center><h3>TAMIL NADU ENGINEERING ADMISSIONS - 2023</h3></center>
+         </div>
+        
+         <div class="navbar">            
+             <a href="../index.html">Home</a>
+             <a href="../login.html">Login</a>
+             <a href="../register.html">Register</a> 
+             <a class="active" href="#">Admin</a><br>
+        </div>  
+        
+        <form>
+             <br>
+             <center><h1>Welcome</h1></center>
+             <center><input  type="text" class="out" placeholder="Enter Counselling code" id="searchInput">
+                 <input  type="button" id="searchButton" class="button" value="Search"/>
+                 <input type="reset" class="button" value="clear"/>
+             </center>
+             <div id="result"></div>
+            <center> <table id="myTable"><br><br>
+    <thead>
+      <tr>
+        <th>SI No.</th>
+        <th>TNEA Counselling Code</th>
+        <th>Name of the College</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>7311</td>
+        <td>Government College of Engineering,Erode</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>4680</td>
+        <td>AAA College of Engineering and Technology</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>5901</td>
+         <td>Alagappa Chettiar Government College of Engineering and Technology (Autonomous)</td>
+      </tr>
+    </tbody>
+        </table></center>
+            <br><br>
+            <center><input type="button" id="updateButton" class="button" value="Add Row"/></center>
+            
+            
+        </form>
+        
+    </body>
+</html>
